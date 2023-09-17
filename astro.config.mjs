@@ -14,8 +14,7 @@ export default defineConfig({
   site: 'https://aquaprofi.com',
   output: "server",
   adapter: vercel({
-    imageService: true,
-    devImageService: 'squoosh',
+    functionPerRoute: true,
     speedInsights: {
       enabled: true,
     },
