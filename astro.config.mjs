@@ -7,7 +7,7 @@ import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), sitemap()],
+  integrations: [react(), tailwind({configFile: './tailwind.config.cjs'}), sitemap()],
   site: 'https://aquaprofi.com',
   output: "server",
   adapter: netlify({
