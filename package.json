@@ -7,13 +7,14 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "dev": "bun --bun astro dev",
+    "start": "bun --bun astro dev",
+    "build": "bun --bun astro build",
+    "preview": "bun --bun astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^3.0.1",
     "@astrojs/react": "^3.0.2",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
@@ -33,7 +34,7 @@
     "prettier-plugin-tailwindcss": "^0.5.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@types/figlet": "^1.5.6",
