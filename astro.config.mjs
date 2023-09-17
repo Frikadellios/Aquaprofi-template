@@ -11,7 +11,6 @@ export default defineConfig({
   integrations: [react(), tailwind({
     configFile: './tailwind.config.cjs'
   }), sitemap()],
-  site: 'https://aquaprofi.com',
   output: "server",
   adapter: vercel({
     functionPerRoute: true,
